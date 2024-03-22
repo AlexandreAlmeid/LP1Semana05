@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Threading;
 
 // System.Diagnostics
-// ElapsedMiliseconds
+// ElapsedMilliseconds
 // IsRunning
 // Start
 // Stop

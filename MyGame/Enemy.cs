@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel;
 
 namespace MyGame
 {
@@ -10,13 +11,26 @@ namespace MyGame
 
         public Enemy(string name)
         {
-            this.name=name;
+            SetName(name);
             health =100;
             shield = 0;
         }
         public string GetName()
         {
             return name;
+        }
+
+        public float GetHealth()
+        {
+            return health;
+        }
+        public float GetShield()
+        {
+            return shield;
+        }
+        public void SetName(string str)
+        {
+            this.name = str.Substring(0,8);
         }
         public void TakeDamage(float damage)
         {
